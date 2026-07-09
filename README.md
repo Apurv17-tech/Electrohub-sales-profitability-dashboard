@@ -21,6 +21,17 @@ This dashboard consolidates all of that into one filterable Power BI report.
 
 ---
 
+## 🖼️ Dashboard Preview
+
+| | |
+|---|---|
+| ![Page 1](Screenshots/Page_1.png) | ![Page 2](Screenshots/Page_2.png) |
+| ![Page 3](Screenshots/Page_3.png) | ![Page 4](Screenshots/Page_4.png) |
+
+![Page 5](Screenshots/Page_5.png)
+
+---
+
 ## 🎯 Key Insights & Actions
 
 | Focus Area | Insight | Recommended Action |
@@ -36,32 +47,18 @@ This dashboard consolidates all of that into one filterable Power BI report.
 ## 🗂️ Repository Structure
 
 ```
-electrohub-sales-profitability-dashboard/
+Electrohub-sales-profitability-dashboard/
 │
-├── README.md                     # Project documentation (this file)
-├── LICENSE                       # Open-source license
-├── .gitignore                    # Ignore temp/system files
+├── README.md                # Project documentation (this file)
+├── Project.pbix              # Main Power BI report file
 │
-├── pbix/
-│   └── ElectroHub_Dashboard.pbix # Main Power BI report file
-│
-├── data/                         # Source CSVs (if shareable/sanitized)
-│   ├── dim_customers.csv
-│   ├── dim_product.csv
-│   ├── dim_promotion.csv
-│   └── fact_sales.csv
-│
-├── images/                       # Dashboard screenshots
-│   ├── dashboard-overview.png
-│   ├── product-performance.png
-│   └── order-details-table.png
-│
-└── docs/
-    ├── dax-measures.md           # All DAX formulas used
-    └── data-model.png            # Star schema diagram
+└── Screenshots/
+    ├── Page_1.png
+    ├── Page_2.png
+    ├── Page_3.png
+    ├── Page_4.png
+    └── Page_5.png
 ```
-
-> 💡 If your source CSVs contain sensitive or proprietary data, keep the `data/` folder out of the repo (add it to `.gitignore`) and only publish a sample/sanitized version.
 
 ---
 
@@ -69,7 +66,7 @@ electrohub-sales-profitability-dashboard/
 
 The report uses a **star schema**:
 
-- **Fact Table** — transactional sales data (Sheet3): Net Sales, Profit, Units Sold, Date, Discount, Customer ID, Product ID, Promo ID
+- **Fact Table** — transactional sales data: Net Sales, Profit, Units Sold, Date, Discount, Customer ID, Product ID, Promo ID
 - **Dim Customers** — customer attributes
 - **Dim Product** — product name, category
 - **Dim Promotion** — promotion category, discount details
@@ -108,8 +105,6 @@ CALCULATE(
 )
 ```
 
-*(Full list available in [`docs/dax-measures.md`](docs/dax-measures.md))*
-
 ---
 
 ## 📈 Dashboard Features
@@ -120,16 +115,6 @@ CALCULATE(
 - **Order-Level Detail Table** — Full audit trail with Net Sales, Discounts, and Order Volume
 - **Slicers** — Product Category, City, Promotion Category, Order Date
 - **Period-over-Period Comparison** — Dynamic benchmarking between any two timeframes
-
----
-
-## 🖼️ Dashboard Preview
-
-> Add screenshots to `images/` and reference them here, e.g.:
-
-```markdown
-![Dashboard Overview](images/dashboard-overview.png)
-```
 
 ---
 
@@ -147,31 +132,20 @@ CALCULATE(
 
 1. Clone this repository
    ```bash
-   git clone https://github.com/<your-username>/electrohub-sales-profitability-dashboard.git
+   git clone https://github.com/Apurv17-tech/Electrohub-sales-profitability-dashboard.git
    ```
-2. Open `pbix/ElectroHub_Dashboard.pbix` in **Power BI Desktop**
-3. Refresh the data source connections if using your own CSVs (`data/`)
-4. Explore the report using the slicers and filter pane
-
----
-
-## 📌 Suggested GitHub Metadata
-
-**Description:**
-> Interactive Power BI dashboard analyzing ElectroHub's sales, profit, and customer trends across product categories, cities, and promotions — with DAX-driven KPIs and period-over-period comparisons.
-
-**Topics/Tags:**
-`power-bi` `dax` `data-analytics` `business-intelligence` `dashboard` `sales-analytics` `data-visualization` `star-schema`
+2. Open `Project.pbix` in **Power BI Desktop**
+3. Explore the report using the slicers and filter pane
 
 ---
 
 ## 👤 Author
 
-**[Your Name]**
-📧 [your.email@example.com] · 🔗 [LinkedIn](#) · 🌐 [Portfolio](#)
+**Apurv Bhawsar**
+🔗 [GitHub](https://github.com/Apurv17-tech)
 
 ---
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
