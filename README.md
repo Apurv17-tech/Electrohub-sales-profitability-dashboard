@@ -44,24 +44,6 @@ This dashboard consolidates all of that into one filterable Power BI report.
 
 ---
 
-## 🗂️ Repository Structure
-
-```
-Electrohub-sales-profitability-dashboard/
-│
-├── README.md                # Project documentation (this file)
-├── Project.pbix              # Main Power BI report file
-│
-└── Screenshots/
-    ├── Page_1.png
-    ├── Page_2.png
-    ├── Page_3.png
-    ├── Page_4.png
-    └── Page_5.png
-```
-
----
-
 ## 🏗️ Data Model
 
 The report uses a **star schema**:
